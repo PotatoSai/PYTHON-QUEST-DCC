@@ -3,14 +3,22 @@
 
 
 
+print("PALINDROME CHECKER FOR ALF")
 
+word = input("Enter the word to check: ")
+wordLower = word.lower()
 
 
 
 # Write the code ↓ to check if the entered word is a palindrome.
 # Utilize string functions to compare the original word with its reverse.
 
+reverseWord = ""
 
+
+
+for char in wordLower:
+    reverseWord = char + reverseWord
 
 
 
@@ -21,5 +29,10 @@
 
 
 
+
+if wordLower == reverseWord:
+    print(f"{word} is a palindrome.")
+else:
+    print(f"{word} is not a palindrome.")
 
 
