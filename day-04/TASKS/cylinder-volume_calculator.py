@@ -4,6 +4,10 @@ import math
 # Be cautious when reading input of various data types.
 
 
+radius= float(input("Enter the radius of cylinder: "))
+height = float(input("Enter the height of cylinder: "))
+total = 0.0
+pi = 3.14159
 
 
 
@@ -16,7 +20,12 @@ import math
 
 
 
+total = pi * math.pow(radius,2) * height
+
+
 # Write the code ↓ to display the calculated volume with 2 decimal places.
+
+print("The hypothenuse of the right-angled triangle is: %.2f" % total)
 # Select and employ a string concatenation method based on your personal preference and comfort level.
 
 
