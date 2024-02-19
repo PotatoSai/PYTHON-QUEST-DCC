@@ -2,19 +2,19 @@ import json
 
 name = input("Enter your name: ")
 age = input("Enter your age: ")
-favorite_food = input("Enter your favorite food: ")
+favoriteFood = input("Enter your favorite food: ")
 
 
-user_info = {
+user = {
     "name": name,
     "age": age,
-    "favorite_food": favorite_food
+    "favorite_food": favoriteFood
 }
 
 
-json_data = json.dumps(user_info, indent=2)
+data = json.dumps(user, indent=2)
 
 
 with open("output.json", "w") as file:
-    file.write(json_data)
+    file.write(data)
 
